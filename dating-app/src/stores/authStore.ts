@@ -8,7 +8,7 @@ type AuthState = {
 	logout: () => void
 }
 
-export const useAuthStore = create<AuthState>((set, get) => ({
+export const useAuthStore = create<AuthState>((set) => ({
 	userId: localStorage.getItem('userId'),
 	pendingIdentifier: null,
 	startOtpFlow: (identifier: string) => {

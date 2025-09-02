@@ -1,6 +1,8 @@
-import { FormEvent, useEffect, useState } from 'react'
+import type { FormEvent } from 'react'
+import { useEffect, useState } from 'react'
 import { useAuthStore } from '../stores/authStore'
-import { useProfileStore, UserProfile, Gender } from '../stores/profileStore'
+import { useProfileStore } from '../stores/profileStore'
+import type { UserProfile, Gender } from '../stores/profileStore'
 
 export default function ProfileEditPage() {
 	const { userId } = useAuthStore()
